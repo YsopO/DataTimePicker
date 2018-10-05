@@ -33,7 +33,7 @@ function dateTimeTable(parent:HTMLElement){
         let myBodyCells = [1,2,3,4,5,6,7].map(y=>{
             let col = create("td",row,"","")
             let btn = create("button",col,"selectable",`${x}_${y}`) as HTMLButtonElement
-            btn.innerText = "12"
+            btn.innerText = "14"
             return col
         })
         return row

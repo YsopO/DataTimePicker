@@ -19,6 +19,7 @@ function dateTimeTable(parent:HTMLElement){
     let date = new Date(Date.now())
     let weekday = date.getDate()
     console.log(weekday)
+    let left = create("")
     let myTable = create("table",parent,"","")
     let myTableHead = create("thead",myTable,"","")
     let myHeadRow = create("tr",myTableHead,"","")

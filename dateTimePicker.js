@@ -1,3 +1,12 @@
+/**
+ * Create erzeugt ein HTML-Element und hängt dieses im Elternelement ein. Optional können Klassenname
+ * und ID angegeben werden.
+ *
+ * @param htmlElement zu erzeugendes Element
+ * @param parent Elternelement
+ * @param className Klassenname (leerer String für kein Klassennamen)
+ * @param id ID (leerer String für keine ID)
+ */
 function create(htmlElement, parent, className, id) {
     var elem = document.createElement(htmlElement);
     if (className)
@@ -25,7 +34,7 @@ function dateTimeTable(parent) {
         var myBodyCells = [1, 2, 3, 4, 5, 6, 7].map(function (y) {
             var col = create("td", row, "", "");
             var btn = create("button", col, "selectable", x + "_" + y);
-            btn.innerText = "12";
+            btn.innerText = "14";
             return col;
         });
         return row;

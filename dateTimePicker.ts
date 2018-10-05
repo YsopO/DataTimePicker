@@ -1,3 +1,12 @@
+/**
+ * Create erzeugt ein HTML-Element und hängt dieses im Elternelement ein. Optional können Klassenname
+ * und ID angegeben werden.
+ * 
+ * @param htmlElement zu erzeugendes Element
+ * @param parent Elternelement
+ * @param className Klassenname (leerer String für kein Klassennamen)
+ * @param id ID (leerer String für keine ID)
+ */
 function create<T>(htmlElement:string, parent:HTMLElement,className:string,id:string){
     let elem = document.createElement(htmlElement)
     if (className) elem.className = className
